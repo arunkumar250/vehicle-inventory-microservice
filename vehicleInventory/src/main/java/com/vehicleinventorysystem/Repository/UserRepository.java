@@ -8,7 +8,7 @@ import com.vehicleinventorysystem.model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-	User save(User user)
+	User save(User user);
 
 	User findByUserNameAndPassword(String username, String password);
 
